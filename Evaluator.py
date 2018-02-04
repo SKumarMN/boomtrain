@@ -3,7 +3,11 @@
 Created on Sat Feb  3 15:56:39 2018
 
 @author: shmn
-@desc: Logical Evaluator class with evaluates the rules against the data
+@desc: Logical Evaluator class with evaluates the rules against the data.
+@assumptions: Assumes the outer expressions have only logical operators format ["AND",[EXP1],[EXP2]]
+              Assumes the inner expressions i.e EXP1, EXP2 have only arithmetic operators and the format is of type ["LT","user.age",12] or ["GT", 35, 20] or is made of only booleans
+			  Assumes when the logical operator is Not, it has only one expression or boolean value 
+
 """
 from Operator import EQ,GT,AND,OR,NOT,LT,IN
 
